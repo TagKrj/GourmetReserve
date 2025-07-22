@@ -185,7 +185,8 @@ body {
 
 /* Calendar Components */
 .calendar-container {
-    @apply bg-white rounded-xl overflow-hidden card-shadow;
+    @apply bg-white rounded-xl overflow-hidden;
+    box-shadow: var(--shadow-lg);
 }
 
 .calendar-header {
@@ -276,12 +277,14 @@ body {
 }
 
 .form-textarea {
-    @apply w-full px-4 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent resize-vertical min-h-24;
+    @apply w-full px-4 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent min-h-24;
+    resize: vertical;
 }
 
 /* Card Components */
 .card {
-    @apply bg-white rounded-xl overflow-hidden card-shadow;
+    @apply bg-white rounded-xl overflow-hidden;
+    box-shadow: var(--shadow-lg);
 }
 
 .card-header {
@@ -298,7 +301,8 @@ body {
 
 /* Modal Components */
 .modal-overlay {
-    @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
+    @apply fixed inset-0 flex items-center justify-center z-50;
+    background-color: rgb(0 0 0 / 0.5);
 }
 
 .modal-content {
@@ -328,7 +332,8 @@ body {
 
 /* Notification Components */
 .notification {
-    @apply fixed top-4 right-4 max-w-sm bg-white border border-neutral-300 rounded-lg p-4 card-shadow z-50;
+    @apply fixed top-4 right-4 max-w-sm bg-white border border-neutral-300 rounded-lg p-4 z-50;
+    box-shadow: var(--shadow-lg);
 }
 
 .notification-success {
