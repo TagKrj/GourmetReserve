@@ -182,6 +182,10 @@ body {
     border-radius: 0 4px 4px 0;
 }
 
+.nav-item-parent-active {
+    @apply text-neutral-700 font-semibold;
+}
+
 /* Remove the ::before for nav-item-active when it's a submenu item */
 .pl-4 .nav-item-active::before {
     display: none;

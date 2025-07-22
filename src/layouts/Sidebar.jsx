@@ -9,8 +9,8 @@ const Sidebar = () => {
     const toggleSubmenu = (menuId) => {
         setExpandedMenus(prev =>
             prev.includes(menuId)
-                ? prev.filter(id => id !== menuId)
-                : [...prev, menuId]
+                ? [] // Close the current menu if it's already open
+                : [menuId] // Close all other menus and open only this one
         );
     };
 
