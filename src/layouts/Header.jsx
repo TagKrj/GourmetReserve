@@ -18,10 +18,10 @@ const Header = () => {
             {/* Left Menu - Store Selector */}
             <div className="relative">
                 <div
-                    className="bg-[#F9F8F6] rounded-[2px] px-3 py-2 flex items-center gap-2 cursor-pointer hover:bg-neutral-300 transition-colors"
+                    className="bg-[#F9F8F6] rounded-[2px] w-[148px] px-3 py-2 flex items-center gap-2 cursor-pointer hover:bg-neutral-300 transition-colors"
                     onClick={toggleStoreDropdown}
                 >
-                    <span className="text-[#1A1A1A] text-[15px] font-medium">東京店舗</span>
+                    <span className="text-[#1A1A1A] text-[15px] font-medium flex-1">東京店舗</span>
                     <svg
                         width="24"
                         height="24"
@@ -38,23 +38,6 @@ const Header = () => {
                         />
                     </svg>
                 </div>
-
-                {/* Store Dropdown Menu */}
-                {isStoreDropdownOpen && (
-                    <div className="absolute top-full left-0 mt-2 bg-white border border-[#D0D0D0] rounded-lg shadow-lg min-w-[160px] z-50">
-                        <div className="py-2">
-                            <button className="w-full px-4 py-2 text-left text-[#1A1A1A] hover:bg-neutral-200 transition-colors">
-                                東京店舗
-                            </button>
-                            <button className="w-full px-4 py-2 text-left text-[#1A1A1A] hover:bg-neutral-200 transition-colors">
-                                大阪店舗
-                            </button>
-                            <button className="w-full px-4 py-2 text-left text-[#1A1A1A] hover:bg-neutral-200 transition-colors">
-                                名古屋店舗
-                            </button>
-                        </div>
-                    </div>
-                )}
             </div>
 
             {/* Right Section */}
@@ -63,26 +46,12 @@ const Header = () => {
                 <div className="relative">
                     <button className="relative p-2 rounded-full border border-[#D0D0D0] hover:bg-neutral-200 transition-colors">
                         {/* Notification Icon */}
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path
-                                d="M5 18V13C5 7.477 9.477 3 15 3C20.523 3 25 7.477 25 13V18"
-                                stroke="#1A1A1A"
-                                strokeWidth="2"
-                                fill="none"
-                            />
-                            <path
-                                d="M14 21H16"
-                                stroke="#1A1A1A"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                            />
-                            <circle
-                                cx="15"
-                                cy="18"
-                                r="2"
-                                fill="#1A1A1A"
-                            />
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C8.134 2 5 5.134 5 9V19H19V9C19 5.134 15.866 2 12 2Z" fill="#1A1A1A" />
+                            <path d="M5 19V9C5 5.134 8.134 2 12 2C15.866 2 19 5.134 19 9V19M2 19H22" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12 22C13.3807 22 14.5 20.8807 14.5 19.5V19H9.5V19.5C9.5 20.8807 10.6193 22 12 22Z" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
+
                     </button>
 
                     {/* Notification Badge */}
@@ -130,6 +99,25 @@ const Header = () => {
                         </div>
                     </div>
 
+                    {/* Profile Dropdown Menu */}
+                    {/*    
+             {isProfileDropdownOpen && (
+                        <div className="absolute top-full right-0 mt-2 bg-white border border-[#D0D0D0] rounded-lg shadow-lg min-w-[180px] z-50">
+                            <div className="py-2">
+                                <button className="w-full px-4 py-2 text-left text-[#1A1A1A] hover:bg-neutral-200 transition-colors">
+                                    プロフィール
+                                </button>
+                                <button className="w-full px-4 py-2 text-left text-[#1A1A1A] hover:bg-neutral-200 transition-colors">
+                                    設定
+                                </button>
+                                <hr className="my-2 border-[#D0D0D0]" />
+                                <button className="w-full px-4 py-2 text-left text-[#1A1A1A] hover:bg-neutral-200 transition-colors">
+                                    ログアウト
+                                </button>
+                            </div>
+                        </div>
+                    )}
+                    */}
                 </div>
             </div>
         </header>

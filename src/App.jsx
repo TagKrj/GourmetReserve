@@ -10,7 +10,7 @@ function App() {
       <Sidebar />
 
       {/* Main Content */}
-      <div className="flex-1">
+      <div className="flex-1 ml-[240px]">
         <Header />
       </div>
 
