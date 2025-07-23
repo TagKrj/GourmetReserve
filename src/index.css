@@ -168,6 +168,13 @@ body {
     stroke: #1A1A1A !important;
 }
 
+.nav-item-active:hover svg path,
+.nav-item-active:hover svg circle,
+.nav-item-active:hover svg line,
+.nav-item-active:hover svg polyline {
+    stroke: #FFFFFF !important;
+}
+
 .nav-item-active {
     @apply text-white rounded-lg;
     background-color: #E35A0A;
@@ -191,6 +198,13 @@ body {
 
 .nav-item-parent-active {
     @apply text-neutral-700 font-semibold;
+}
+
+.nav-item-parent-active svg path,
+.nav-item-parent-active svg circle,
+.nav-item-parent-active svg line,
+.nav-item-parent-active svg polyline {
+    stroke: #404040 !important;
 }
 
 /* Remove the ::before for nav-item-active when it's a submenu item */
