@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar from "./layouts/Sidebar";
+import Header from "./layouts/Header";
 
 
 function App() {
@@ -9,6 +10,9 @@ function App() {
       <Sidebar />
 
       {/* Main Content */}
+      <div className="flex-1">
+        <Header />
+      </div>
 
     </div>
   );
