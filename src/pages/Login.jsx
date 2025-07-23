@@ -54,14 +54,11 @@ const Login = () => {
                                             onClick={() => setShowPassword(!showPassword)}
                                             className="w-6 h-6"
                                         >
-                                            <svg width="22" height="16" viewBox="0 0 22 16" fill="none">
-                                                <path
-                                                    d="M11 1C6 1 1.73 4.11 0 8.5c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5C20.27 4.11 16 1 11 1zM11 13a4.5 4.5 0 110-9 4.5 4.5 0 010 9zm0-7a2.5 2.5 0 100 5 2.5 2.5 0 000-5z"
-                                                    stroke="#1A1A1A"
-                                                    strokeWidth="2"
-                                                    fill="none"
-                                                />
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
+
                                         </button>
                                     }
                                 />
