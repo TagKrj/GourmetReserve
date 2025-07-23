@@ -73,9 +73,7 @@ export default defineConfig({
 
 Add to `src/index.css`:
 ```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 ```
 
 ### 9. Start Development Server
