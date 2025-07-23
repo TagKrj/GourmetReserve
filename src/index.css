@@ -212,7 +212,7 @@ body {
 .nav-item-parent-active svg circle,
 .nav-item-parent-active svg line,
 .nav-item-parent-active svg polyline {
-    stroke: #404040 !important;
+    stroke: #1A1A1A !important;
 }
 
 /* Remove the ::before for nav-item-active when it's a submenu item */

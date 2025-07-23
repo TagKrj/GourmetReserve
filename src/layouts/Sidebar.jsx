@@ -31,6 +31,11 @@ const Sidebar = () => {
         return item.hasSubmenu && item.submenu?.some(subItem => activeItem === subItem.id);
     };
 
+    const isMenuExpanded = (item) => {
+        // Check if menu is expanded (opened)
+        return item.hasSubmenu && expandedMenus.includes(item.id);
+    };
+
     return (
         <div className="nav-sidebar fixed left-0 top-0 h-screen bg-white border-r border-neutral-300 flex flex-col px-2">
             {/* Logo */}
@@ -45,7 +50,7 @@ const Sidebar = () => {
                 {menuItems.map((item) => (
                     <div key={item.id}>
                         <div
-                            className={`nav-item cursor-pointer ${isMenuActive(item) ? 'nav-item-active' : ''} ${hasActiveSubmenu(item) ? 'nav-item-parent-active' : ''}`}
+                            className={`nav-item cursor-pointer ${isMenuActive(item) ? 'nav-item-active' : ''} ${isMenuExpanded(item) ? 'nav-item-parent-active' : ''}`}
                             onClick={() => handleMenuClick(item)}
                         >
                             <div className="w-6 h-6 text-current">
