@@ -180,6 +180,13 @@ body {
     background-color: #E35A0A;
 }
 
+.nav-item-active svg path,
+.nav-item-active svg circle,
+.nav-item-active svg line,
+.nav-item-active svg polyline {
+    stroke: #FFFFFF !important;
+}
+
 .nav-item-active:hover {
     @apply text-white;
     background-color: #E35A0A;

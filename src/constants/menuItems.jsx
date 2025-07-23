@@ -81,17 +81,17 @@ export const menuItems = [
         label: ' テーブル管理',
         icon: (
             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.5 3.66504H3.5C2.94772 3.66504 2.5 4.11275 2.5 4.66504V12.665C2.5 13.2173 2.94772 13.665 3.5 13.665H20.5C21.0523 13.665 21.5 13.2173 21.5 12.665V4.66504C21.5 4.11275 21.0523 3.66504 20.5 3.66504Z" stroke="#8C8C8C" stroke-width="2" stroke-linejoin="round" />
-                <path d="M6 13.665V21.665V13.665Z" fill="#8C8C8C" />
-                <path d="M6 13.665V21.665" stroke="#8C8C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M18 17.165H6H18Z" fill="#8C8C8C" />
-                <path d="M18 17.165H6" stroke="#8C8C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M8 21.665H4H8Z" fill="#8C8C8C" />
-                <path d="M8 21.665H4" stroke="#8C8C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M20 21.665H16H20Z" fill="#8C8C8C" />
-                <path d="M20 21.665H16" stroke="#8C8C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M18 13.665V21.665V13.665Z" fill="#8C8C8C" />
-                <path d="M18 13.665V21.665" stroke="#8C8C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M20.5 3.66504H3.5C2.94772 3.66504 2.5 4.11275 2.5 4.66504V12.665C2.5 13.2173 2.94772 13.665 3.5 13.665H20.5C21.0523 13.665 21.5 13.2173 21.5 12.665V4.66504C21.5 4.11275 21.0523 3.66504 20.5 3.66504Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                <path d="M6 13.665V21.665V13.665Z" fill="currentColor" />
+                <path d="M6 13.665V21.665" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M18 17.165H6H18Z" fill="currentColor" />
+                <path d="M18 17.165H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M8 21.665H4H8Z" fill="currentColor" />
+                <path d="M8 21.665H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M20 21.665H16H20Z" fill="currentColor" />
+                <path d="M20 21.665H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M18 13.665V21.665V13.665Z" fill="currentColor" />
+                <path d="M18 13.665V21.665" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
 
         ),
@@ -136,10 +136,10 @@ export const menuItems = [
         label: 'コース管理',
         icon: (
             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7 2.66504V22.665" stroke="#8C8C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M4 3.16504V8.16504C4 10.665 7 10.665 7 10.665C7 10.665 10 10.665 10 8.16504V3.16504" stroke="#8C8C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M7 2.66504V22.665" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 3.16504V8.16504C4 10.665 7 10.665 7 10.665C7 10.665 10 10.665 10 8.16504V3.16504" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M15 6.66504C15 2.66504 19 2.66504 19 2.66504V11.165H15V6.66504Z" fill="white" />
-                <path d="M19 11.165H15V6.66504C15 2.66504 19 2.66504 19 2.66504V11.165ZM19 11.165V22.665" stroke="#8C8C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19 11.165H15V6.66504C15 2.66504 19 2.66504 19 2.66504V11.165ZM19 11.165V22.665" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
 
         ),
@@ -201,8 +201,8 @@ export const menuItems = [
         label: '顧客管理',
         icon: (
             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 10.665C14.2091 10.665 16 8.87418 16 6.66504C16 4.4559 14.2091 2.66504 12 2.66504C9.79086 2.66504 8 4.4559 8 6.66504C8 8.87418 9.79086 10.665 12 10.665Z" fill="#8C8C8C" stroke="#8C8C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M21 22.665C21 17.6945 16.9706 13.665 12 13.665C7.02945 13.665 3 17.6945 3 22.665" stroke="#8C8C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 10.665C14.2091 10.665 16 8.87418 16 6.66504C16 4.4559 14.2091 2.66504 12 2.66504C9.79086 2.66504 8 4.4559 8 6.66504C8 8.87418 9.79086 10.665 12 10.665Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M21 22.665C21 17.6945 16.9706 13.665 12 13.665C7.02945 13.665 3 17.6945 3 22.665" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
 
         ),
@@ -269,8 +269,8 @@ export const menuItems = [
         label: '集計分析',
         icon: (
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22.2552 12.665C22.2552 18.1879 17.7594 22.665 12.2135 22.665C6.66768 22.665 2.17188 18.1879 2.17188 12.665C2.17188 7.14219 6.66768 2.66504 12.2135 2.66504V12.665H22.2552Z" stroke="#8C8C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M21.796 9.66528H15.2266V3.12305C18.3496 4.09987 20.8152 6.55518 21.796 9.66528Z" stroke="#8C8C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M22.2552 12.665C22.2552 18.1879 17.7594 22.665 12.2135 22.665C6.66768 22.665 2.17188 18.1879 2.17188 12.665C2.17188 7.14219 6.66768 2.66504 12.2135 2.66504V12.665H22.2552Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M21.796 9.66528H15.2266V3.12305C18.3496 4.09987 20.8152 6.55518 21.796 9.66528Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
 
         ),
@@ -353,8 +353,8 @@ export const bottomMenuItems = [
         label: '設定',
         icon: (
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.1419 21.5854C7.46635 21.0866 5.9749 20.1604 4.79393 18.9333C5.2345 18.4111 5.5 17.7365 5.5 16.9998C5.5 15.343 4.15685 13.9998 2.5 13.9998C2.39977 13.9998 2.3007 14.0048 2.203 14.0144C2.0699 13.3636 2 12.6899 2 11.9998C2 10.9545 2.16039 9.94666 2.4579 8.99951C2.47191 8.99971 2.48594 8.99981 2.5 8.99981C4.15685 8.99981 5.5 7.65666 5.5 5.99981C5.5 5.52416 5.3893 5.07441 5.1923 4.67481C6.34875 3.59951 7.76025 2.79477 9.32605 2.36133C9.8222 3.33385 10.8333 3.99982 12 3.99982C13.1667 3.99982 14.1778 3.33385 14.674 2.36133C16.2398 2.79477 17.6512 3.59951 18.8077 4.67481C18.6107 5.07441 18.5 5.52416 18.5 5.99981C18.5 7.65666 19.8432 8.99981 21.5 8.99981C21.5141 8.99981 21.5281 8.99971 21.5421 8.99951C21.8396 9.94666 22 10.9545 22 11.9998C22 12.6899 21.9301 13.3636 21.797 14.0144C21.6993 14.0048 21.6002 13.9998 21.5 13.9998C19.8432 13.9998 18.5 15.343 18.5 16.9998C18.5 17.7365 18.7655 18.4111 19.2061 18.9333C18.0251 20.1604 16.5336 21.0866 14.8581 21.5854C14.4714 20.3758 13.338 19.4998 12 19.4998C10.662 19.4998 9.5286 20.3758 9.1419 21.5854Z" stroke="#8C8C8C" stroke-width="2" stroke-linejoin="round" />
-                <path d="M12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5Z" stroke="#8C8C8C" stroke-width="2" stroke-linejoin="round" />
+                <path d="M9.1419 21.5854C7.46635 21.0866 5.9749 20.1604 4.79393 18.9333C5.2345 18.4111 5.5 17.7365 5.5 16.9998C5.5 15.343 4.15685 13.9998 2.5 13.9998C2.39977 13.9998 2.3007 14.0048 2.203 14.0144C2.0699 13.3636 2 12.6899 2 11.9998C2 10.9545 2.16039 9.94666 2.4579 8.99951C2.47191 8.99971 2.48594 8.99981 2.5 8.99981C4.15685 8.99981 5.5 7.65666 5.5 5.99981C5.5 5.52416 5.3893 5.07441 5.1923 4.67481C6.34875 3.59951 7.76025 2.79477 9.32605 2.36133C9.8222 3.33385 10.8333 3.99982 12 3.99982C13.1667 3.99982 14.1778 3.33385 14.674 2.36133C16.2398 2.79477 17.6512 3.59951 18.8077 4.67481C18.6107 5.07441 18.5 5.52416 18.5 5.99981C18.5 7.65666 19.8432 8.99981 21.5 8.99981C21.5141 8.99981 21.5281 8.99971 21.5421 8.99951C21.8396 9.94666 22 10.9545 22 11.9998C22 12.6899 21.9301 13.3636 21.797 14.0144C21.6993 14.0048 21.6002 13.9998 21.5 13.9998C19.8432 13.9998 18.5 15.343 18.5 16.9998C18.5 17.7365 18.7655 18.4111 19.2061 18.9333C18.0251 20.1604 16.5336 21.0866 14.8581 21.5854C14.4714 20.3758 13.338 19.4998 12 19.4998C10.662 19.4998 9.5286 20.3758 9.1419 21.5854Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                <path d="M12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
             </svg>
 
         )
@@ -367,10 +367,10 @@ export const bottomMenuItems = [
                 <mask id="path-1-inside-1_241_32982" fill="white">
                     <path d="M18 16C20.2092 16 22 14.2092 22 12C22 9.79085 20.2092 8 18 8" />
                 </mask>
-                <path d="M18 16V16.5C20.4853 16.5 22.5 14.4853 22.5 12H22H21.5C21.5 13.933 19.933 15.5 18 15.5V16ZM22 12H22.5C22.5 9.51471 20.4853 7.5 18 7.5V8V8.5C19.933 8.5 21.5 10.067 21.5 12H22Z" fill="#8C8C8C" mask="url(#path-1-inside-1_241_32982)" />
-                <path d="M18 16C20.2092 16 22 14.2092 22 12C22 9.79085 20.2092 8 18 8" stroke="#8C8C8C" stroke-width="2" stroke-linejoin="round" />
-                <path d="M6 8C3.79086 8 2 9.79085 2 12C2 14.2092 3.79086 16 6 16" stroke="#8C8C8C" stroke-width="2" stroke-linejoin="round" />
-                <path d="M6 16V15.75V14.5V12V8C6 4.68629 8.6863 2 12 2C15.3137 2 18 4.68629 18 8V16C18 19.3137 15.3137 22 12 22" stroke="#8C8C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M18 16V16.5C20.4853 16.5 22.5 14.4853 22.5 12H22H21.5C21.5 13.933 19.933 15.5 18 15.5V16ZM22 12H22.5C22.5 9.51471 20.4853 7.5 18 7.5V8V8.5C19.933 8.5 21.5 10.067 21.5 12H22Z" fill="currentColor" mask="url(#path-1-inside-1_241_32982)" />
+                <path d="M18 16C20.2092 16 22 14.2092 22 12C22 9.79085 20.2092 8 18 8" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                <path d="M6 8C3.79086 8 2 9.79085 2 12C2 14.2092 3.79086 16 6 16" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                <path d="M6 16V15.75V14.5V12V8C6 4.68629 8.6863 2 12 2C15.3137 2 18 4.68629 18 8V16C18 19.3137 15.3137 22 12 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
 
         )
