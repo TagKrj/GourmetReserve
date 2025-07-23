@@ -34,7 +34,7 @@ const Sidebar = () => {
     return (
         <div className="nav-sidebar fixed left-0 top-0 h-screen bg-white border-r border-neutral-300 flex flex-col px-2">
             {/* Logo */}
-            <div className="p-6 border-b border-neutral-300 flex justify-center">
+            <div className="p-6  flex justify-center">
                 <div className="w-40 h-8 flex items-center justify-center " >
                     <img src={logoText} alt="GourmetReserve" className="h-full object-contain" />
                 </div>
