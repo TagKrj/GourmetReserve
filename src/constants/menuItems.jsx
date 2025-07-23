@@ -49,13 +49,13 @@ export const menuItems = [
                 label: '予約一覧',
                 icon: (
                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8.33203 10.665H18.332" stroke="#8C8C8C" stroke-width="0.5" />
-                        <path d="M8.33203 10.665H18.332" stroke="#8C8C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M8.33203 16.498H18.332" stroke="#8C8C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M8.33203 4.83203H18.332" stroke="#8C8C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M5.0013 14.832H1.66797V18.1654H5.0013V14.832Z" stroke="#8C8C8C" stroke-width="2" stroke-linejoin="round" />
-                        <path d="M5.0013 8.99805H1.66797V12.3314H5.0013V8.99805Z" stroke="#8C8C8C" stroke-width="2" stroke-linejoin="round" />
-                        <path d="M5.0013 3.16504H1.66797V6.49837H5.0013V3.16504Z" stroke="#8C8C8C" stroke-width="2" stroke-linejoin="round" />
+                        <path d="M8.33203 10.665H18.332" stroke="currentColor" stroke-width="0.5" />
+                        <path d="M8.33203 10.665H18.332" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M8.33203 16.498H18.332" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M8.33203 4.83203H18.332" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5.0013 14.832H1.66797V18.1654H5.0013V14.832Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                        <path d="M5.0013 8.99805H1.66797V12.3314H5.0013V8.99805Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                        <path d="M5.0013 3.16504H1.66797V6.49837H5.0013V3.16504Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
                     </svg>
 
                 )
@@ -65,11 +65,11 @@ export const menuItems = [
                 label: '予約登録',
                 icon: (
                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.15 7.36415L15.5362 6.97795C16.1761 6.33808 17.2135 6.33808 17.8534 6.97795C18.4933 7.61783 18.4933 8.65528 17.8534 9.29515L17.4672 9.68135M15.15 7.36415C15.15 7.36415 15.1983 8.18483 15.9224 8.90895C16.6466 9.63308 17.4672 9.68135 17.4672 9.68135M15.15 7.36415L11.5995 10.9147C11.359 11.1552 11.2388 11.2754 11.1354 11.408C11.0134 11.5644 10.9088 11.7336 10.8235 11.9126C10.7511 12.0644 10.6974 12.2257 10.5898 12.5484L10.2455 13.5814L10.1341 13.9156M17.4672 9.68135L13.9167 13.2319C13.6762 13.4724 13.556 13.5926 13.4234 13.696C13.267 13.818 13.0978 13.9226 12.9187 14.0079C12.767 14.0802 12.6056 14.134 12.283 14.2416L11.25 14.5859L10.9158 14.6973M10.9158 14.6973L10.5816 14.8087C10.4228 14.8616 10.2478 14.8203 10.1294 14.7019C10.0111 14.5836 9.96976 14.4086 10.0227 14.2498L10.1341 13.9156M10.9158 14.6973L10.1341 13.9156" stroke="#8C8C8C" stroke-width="1.5" />
-                        <path d="M6.66797 11.498H8.7513" stroke="#8C8C8C" stroke-width="1.5" stroke-linecap="round" />
-                        <path d="M6.66797 8.16504H12.0846" stroke="#8C8C8C" stroke-width="1.5" stroke-linecap="round" />
-                        <path d="M6.66797 14.832H7.91797" stroke="#8C8C8C" stroke-width="1.5" stroke-linecap="round" />
-                        <path d="M2.5 12.332V8.9987C2.5 5.856 2.5 4.28465 3.47631 3.30834C4.45262 2.33203 6.02397 2.33203 9.16667 2.33203H10.8333C13.976 2.33203 15.5474 2.33203 16.5237 3.30834M17.5 12.332C17.5 15.4747 17.5 17.0461 16.5237 18.0224M3.47631 18.0224C4.45262 18.9987 6.02397 18.9987 9.16667 18.9987H10.8333C13.976 18.9987 15.5474 18.9987 16.5237 18.0224M16.5237 18.0224C17.3096 17.2365 17.4629 16.065 17.4928 13.9987" stroke="#8C8C8C" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M15.15 7.36415L15.5362 6.97795C16.1761 6.33808 17.2135 6.33808 17.8534 6.97795C18.4933 7.61783 18.4933 8.65528 17.8534 9.29515L17.4672 9.68135M15.15 7.36415C15.15 7.36415 15.1983 8.18483 15.9224 8.90895C16.6466 9.63308 17.4672 9.68135 17.4672 9.68135M15.15 7.36415L11.5995 10.9147C11.359 11.1552 11.2388 11.2754 11.1354 11.408C11.0134 11.5644 10.9088 11.7336 10.8235 11.9126C10.7511 12.0644 10.6974 12.2257 10.5898 12.5484L10.2455 13.5814L10.1341 13.9156M17.4672 9.68135L13.9167 13.2319C13.6762 13.4724 13.556 13.5926 13.4234 13.696C13.267 13.818 13.0978 13.9226 12.9187 14.0079C12.767 14.0802 12.6056 14.134 12.283 14.2416L11.25 14.5859L10.9158 14.6973M10.9158 14.6973L10.5816 14.8087C10.4228 14.8616 10.2478 14.8203 10.1294 14.7019C10.0111 14.5836 9.96976 14.4086 10.0227 14.2498L10.1341 13.9156M10.9158 14.6973L10.1341 13.9156" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M6.66797 11.498H8.7513" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6.66797 8.16504H12.0846" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6.66797 14.832H7.91797" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M2.5 12.332V8.9987C2.5 5.856 2.5 4.28465 3.47631 3.30834C4.45262 2.33203 6.02397 2.33203 9.16667 2.33203H10.8333C13.976 2.33203 15.5474 2.33203 16.5237 3.30834M17.5 12.332C17.5 15.4747 17.5 17.0461 16.5237 18.0224M3.47631 18.0224C4.45262 18.9987 6.02397 18.9987 9.16667 18.9987H10.8333C13.976 18.9987 15.5474 18.9987 16.5237 18.0224M16.5237 18.0224C17.3096 17.2365 17.4629 16.065 17.4928 13.9987" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
                     </svg>
 
                 )

@@ -185,7 +185,8 @@ body {
     background-color: #E35A0A;
 }
 
-.nav-item-parent-active::before {
+.nav-item-parent-active::before,
+.nav-item-active::before {
     content: '';
     position: absolute;
     left: -8px;
@@ -210,17 +211,6 @@ body {
 /* Remove the ::before for nav-item-active when it's a submenu item */
 .pl-4 .nav-item-active::before {
     display: none;
-}
-
-.nav-item-active::before {
-    content: '';
-    position: absolute;
-    left: -8px;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background-color: #E35A0A;
-    border-radius: 0 4px 4px 0;
 }
 
 .nav-dropdown {
