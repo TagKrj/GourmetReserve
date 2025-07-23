@@ -50,7 +50,7 @@ const Sidebar = () => {
                 {menuItems.map((item) => (
                     <div key={item.id}>
                         <div
-                            className={`nav-item cursor-pointer ${isMenuActive(item) ? 'nav-item-active' : ''} ${isMenuExpanded(item) ? 'nav-item-parent-active' : ''}`}
+                            className={`nav-item cursor-pointer ${isMenuActive(item) ? 'nav-item-active' : ''} ${isMenuExpanded(item) || hasActiveSubmenu(item) ? 'nav-item-parent-active' : ''}`}
                             onClick={() => handleMenuClick(item)}
                         >
                             <div className="w-6 h-6 text-current">
