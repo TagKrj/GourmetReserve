@@ -8,7 +8,7 @@ const Checkbox = ({ checked, onChange, label, className = '' }) => {
                     type="checkbox"
                     checked={checked}
                     onChange={onChange}
-                    className="w-5 h-5 border border-neutral-400 rounded-sm appearance-none checked:bg-accent checked:border-accent focus:outline-none"
+                    className="w-5 h-5 border border-neutral-400 rounded-sm appearance-none checked:bg-accent checked:border-accent focus:outline-none cursor-pointer hover:border-accent transition-colors"
                 />
                 {checked && (
                     <svg
@@ -26,7 +26,7 @@ const Checkbox = ({ checked, onChange, label, className = '' }) => {
             </div>
             {label && (
                 <label
-                    className="text-base text-secondary cursor-pointer"
+                    className="text-base text-secondary"
                     onClick={() => onChange({ target: { checked: !checked } })}
                 >
                     {label}
@@ -34,6 +34,4 @@ const Checkbox = ({ checked, onChange, label, className = '' }) => {
             )}
         </div>
     );
-};
-
-export default Checkbox;
+}; export default Checkbox;
