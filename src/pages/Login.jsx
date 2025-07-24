@@ -9,6 +9,9 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const [rememberMe, setRememberMe] = useState(false);
 
+    // Check if both inputs are filled
+    const isFormValid = email.trim() !== '' && password.trim() !== '';
+
     return (
         <div className="min-h-screen bg-primary flex items-center justify-center px-4">
             <div className="bg-white rounded-xl shadow-lg p-11 w-full max-w-md">
@@ -62,11 +65,12 @@ const Login = () => {
                         <div className="space-y-8 text-center">
                             <Button
                                 onClick={() => console.log('Login clicked')}
+                                variant={isFormValid ? 'active' : 'default'}
                             >
                                 ログイン
                             </Button>
 
-                            <p className="text-base text-neutral-500 cursor-pointer hover:text-accent hover:underline transition-colors">
+                            <p className="text-base text-neutral-500 cursor-pointer hover:text-accent transition-colors underline underline-offset-2">
                                 パスワードを忘れた方はこちら
                             </p>
                         </div>
@@ -75,6 +79,6 @@ const Login = () => {
             </div>
         </div>
     );
-}; s
+};
 
 export default Login;
