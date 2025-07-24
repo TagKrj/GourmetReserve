@@ -73,7 +73,7 @@ const Input = ({
                 <button
                     type="button"
                     onClick={togglePasswordVisibility}
-                    className="absolute right-3 top-1/2 transform -translate-y-1/2 hover:opacity-70 transition-opacity"
+                    className="absolute right-3 top-1/2 transform -translate-y-1/2 hover:opacity-70 transition-opacity cursor-pointer"
                 >
                     {isPasswordVisible ? <EyeIcon /> : <EyeClosedIcon />}
                 </button>
