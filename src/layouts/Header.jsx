@@ -17,7 +17,7 @@ const Header = () => {
     };
 
     return (
-        <header className="bg-white border-b border-neutral-300 h-[70px] px-8 flex items-center justify-between">
+        <header className="bg-white border-b border-neutral-300 h-[70px] px-8 flex items-center justify-between fixed top-0 left-[240px] right-0 z-50">
             {/* Left Menu - Store Selector */}
             <div className="relative">
                 <div
