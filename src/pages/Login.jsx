@@ -14,7 +14,7 @@ const Login = () => {
 
     return (
         <div className="min-h-screen bg-primary flex items-center justify-center px-4">
-            <div className="bg-white rounded-xl shadow-lg p-11 w-full max-w-md">
+            <div className="bg-white rounded-xl shadow-lg p-11 w-full max-w-md min-h-[600px] flex flex-col justify-center">
                 <div className="space-y-8">
                     {/* Logo */}
                     <div className="flex justify-start">
