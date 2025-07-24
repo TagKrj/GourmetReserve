@@ -26,7 +26,7 @@ const TabButton = ({
                     key={index}
                     onClick={() => handleTabClick(index)}
                     className={`
-                        px-7 py-2 text-[18px] font-normal leading-[1.2] rounded-[20px] transition-all duration-200
+                        px-7 py-2 text-[18px] font-normal leading-[1.2] rounded-[20px] transition-all duration-200 cursor-pointer
                         ${activeIndex === index
                             ? 'bg-white text-secondary shadow-sm'
                             : 'bg-transparent text-neutral-500 hover:text-neutral-600'
