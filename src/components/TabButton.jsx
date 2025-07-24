@@ -62,14 +62,13 @@ const TabButton = ({
                     key={index}
                     onClick={() => handleTabClick(index)}
                     className={`
-                        relative z-10 px-7 py-2 text-[18px] font-normal leading-[1.2] rounded-[20px] transition-all duration-200 cursor-pointer
+                        relative z-10 px-7 py-2 text-[18px] font-normal leading-[1.2] rounded-[20px] transition-all duration-200 cursor-pointer whitespace-nowrap
                         ${getButtonStyles(index)}
                     `}
                     style={{
                         fontFamily: 'Noto Sans JP, sans-serif',
                         height: '42px',
-                        minWidth: 'auto',
-                        flex: 1
+                        minWidth: 'auto'
                     }}
                 >
                     {typeof option === 'string' ? option : option.label}
