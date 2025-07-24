@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "./layouts/Sidebar";
 import Header from "./layouts/Header";
-import Login from "./pages/Login";
+import AppRouter from "./routes/AppRouter";
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
 
     // </div>
     <div>
-      <Login />
+      <AppRouter />
     </div>
   );
 }

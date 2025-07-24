@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import AuthLayout from '../layouts/AuthLayout';
 import Input from '../components/Input';
 import Button from '../components/Button';
 
 const ForgotPassword = () => {
+    const navigate = useNavigate();
     const [email, setEmail] = useState('');
 
     // Check if email is filled
@@ -12,11 +14,11 @@ const ForgotPassword = () => {
     const handleSendReset = () => {
         console.log('Reset password email sent to:', email);
         // Add your password reset logic here
+        // After successful email send, you might show a confirmation or navigate back
     };
 
     const handleBackToLogin = () => {
-        // Navigate back to login page
-        console.log('Navigate back to login');
+        navigate('/login');
     };
 
     return (
