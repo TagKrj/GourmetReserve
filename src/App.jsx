@@ -3,6 +3,7 @@ import Sidebar from "./layouts/Sidebar";
 import Header from "./layouts/Header";
 import AppRouter from "./routes/AppRouter";
 import ButtonPrimary from "./components/ButtonPrimary";
+import TabButton from "./components/TabButton";
 
 
 function App() {
@@ -133,6 +134,45 @@ function App() {
                       Continue
                     </ButtonPrimary>
                   </div>
+                </div>
+              </div>
+
+              {/* Case 6: Tab Button */}
+              <div>
+                <h3 className="text-lg font-semibold mb-3">Case 6: Tab Button (Toggle)</h3>
+                <div className="space-y-4">
+                  <TabButton
+                    options={[
+                      { label: '日別', value: 'daily' },
+                      { label: '月別', value: 'monthly' }
+                    ]}
+                    defaultActive={0}
+                    onChange={(index, option) => console.log('Selected:', index, option)}
+                  />
+                  <TabButton
+                    options={[
+                      { label: '週間', value: 'weekly' },
+                      { label: '月間', value: 'monthly' },
+                      { label: '年間', value: 'yearly' }
+                    ]}
+                    defaultActive={1}
+                    onChange={(index, option) => console.log('Period selected:', index, option)}
+                  />
+                  <TabButton
+                    options={[
+                      { label: '予約', value: 'reservation' },
+                      { label: 'キャンセル', value: 'cancellation' }
+                    ]}
+                    defaultActive={0}
+                    onChange={(index, option) => console.log('Status selected:', index, option)}
+                  />
+
+                  {/* Ví dụ sử dụng với string đơn giản */}
+                  <TabButton
+                    options={['オプション1', 'オプション2', 'オプション3']}
+                    defaultActive={0}
+                    onChange={(index, option) => console.log('Simple selected:', index, option)}
+                  />
                 </div>
               </div>
 
