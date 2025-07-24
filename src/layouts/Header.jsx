@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import avataHeader from '../assets/logo/avataHeader.png';
+// Import icons
+import arrowDownIcon from '../assets/icon/down.svg';
+import notificationIcon from '../assets/icon/noti.svg';
 
 const Header = () => {
     const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
@@ -22,21 +25,13 @@ const Header = () => {
                     onClick={toggleStoreDropdown}
                 >
                     <span className="text-[#1A1A1A] text-[15px] font-medium flex-1">東京店舗</span>
-                    <svg
+                    <img
+                        src={arrowDownIcon}
+                        alt="Arrow down"
                         width="24"
                         height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
                         className={`transform transition-transform ${isStoreDropdownOpen ? 'rotate-180' : ''}`}
-                    >
-                        <path
-                            d="M6 9l6 6 6-6"
-                            stroke="#1A1A1A"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                    </svg>
+                    />
                 </div>
             </div>
 
@@ -46,12 +41,12 @@ const Header = () => {
                 <div className="relative">
                     <button className="relative p-2 rounded-full border border-[#D0D0D0] hover:bg-neutral-200 transition-colors">
                         {/* Notification Icon */}
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2C8.134 2 5 5.134 5 9V19H19V9C19 5.134 15.866 2 12 2Z" fill="#1A1A1A" />
-                            <path d="M5 19V9C5 5.134 8.134 2 12 2C15.866 2 19 5.134 19 9V19M2 19H22" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M12 22C13.3807 22 14.5 20.8807 14.5 19.5V19H9.5V19.5C9.5 20.8807 10.6193 22 12 22Z" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-
+                        <img
+                            src={notificationIcon}
+                            alt="Notifications"
+                            width="24"
+                            height="24"
+                        />
                     </button>
 
                     {/* Notification Badge */}
@@ -81,21 +76,13 @@ const Header = () => {
 
                         {/* Dropdown Icon */}
                         <div className="w-[18px] h-[18px] p-1 rounded-full border border-[#D0D0D0] flex items-center justify-center">
-                            <svg
-                                width="6"
-                                height="4"
-                                viewBox="0 0 6 4"
-                                fill="none"
+                            <img
+                                src={arrowDownIcon}
+                                alt="Dropdown"
+                                width="10"
+                                height="10"
                                 className={`transform transition-transform ${isProfileDropdownOpen ? 'rotate-180' : ''}`}
-                            >
-                                <path
-                                    d="M1 1L3 3L5 1"
-                                    stroke="#565656"
-                                    strokeWidth="1"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                />
-                            </svg>
+                            />
                         </div>
                     </div>
 
