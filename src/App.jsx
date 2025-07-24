@@ -82,20 +82,55 @@ function App() {
                 <ButtonPrimary variant="outline">
                   予約追加
                 </ButtonPrimary>
-                <ButtonPrimary 
-                  variant="outline" 
-                  icon={<span>+</span>} 
+                <ButtonPrimary
+                  variant="outline"
+                  icon={<span>+</span>}
                   iconPosition="left"
                 >
                   Add Item
                 </ButtonPrimary>
-                <ButtonPrimary 
-                  variant="outline" 
-                  icon={<span>→</span>} 
+                <ButtonPrimary
+                  variant="outline"
+                  icon={<span>→</span>}
                   iconPosition="right"
                 >
                   Continue
                 </ButtonPrimary>
+              </div>
+            </div>
+
+            {/* Case 5: Button Size Comparison */}
+            <div>
+              <h3 className="text-lg font-semibold mb-3">Case 5: Size Comparison (Medium vs Small)</h3>
+
+              <div className="mb-4">
+                <h4 className="text-md font-medium mb-2">Size Medium (Mặc định):</h4>
+                <div className="flex flex-wrap gap-3">
+                  <ButtonPrimary variant="primary" size="medium">
+                    予約追加
+                  </ButtonPrimary>
+                  <ButtonPrimary variant="outline" size="medium" icon={<span>+</span>}>
+                    Add Item
+                  </ButtonPrimary>
+                  <ButtonPrimary variant="default" size="medium" icon={<span>→</span>} iconPosition="right">
+                    Continue
+                  </ButtonPrimary>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="text-md font-medium mb-2">Size Small:</h4>
+                <div className="flex flex-wrap gap-3">
+                  <ButtonPrimary variant="primary" size="small">
+                    予約追加
+                  </ButtonPrimary>
+                  <ButtonPrimary variant="outline" size="small" icon={<span>+</span>}>
+                    Add Item
+                  </ButtonPrimary>
+                  <ButtonPrimary variant="default" size="small" icon={<span>→</span>} iconPosition="right">
+                    Continue
+                  </ButtonPrimary>
+                </div>
               </div>
             </div>
 
