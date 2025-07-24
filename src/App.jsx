@@ -75,6 +75,30 @@ function App() {
               </div>
             </div>
 
+            {/* Case 4: Button Outline - Mới */}
+            <div>
+              <h3 className="text-lg font-semibold mb-3">Case 4: Button Outline (Viền cam)</h3>
+              <div className="space-y-2">
+                <ButtonPrimary variant="outline">
+                  予約追加
+                </ButtonPrimary>
+                <ButtonPrimary 
+                  variant="outline" 
+                  icon={<span>+</span>} 
+                  iconPosition="left"
+                >
+                  Add Item
+                </ButtonPrimary>
+                <ButtonPrimary 
+                  variant="outline" 
+                  icon={<span>→</span>} 
+                  iconPosition="right"
+                >
+                  Continue
+                </ButtonPrimary>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
