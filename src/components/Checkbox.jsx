@@ -26,7 +26,7 @@ const Checkbox = ({ checked, onChange, label, className = '' }) => {
             </div>
             {label && (
                 <label
-                    className="text-base text-secondary"
+                    className="text-sm text-secondary"
                     onClick={() => onChange({ target: { checked: !checked } })}
                 >
                     {label}

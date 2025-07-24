@@ -26,10 +26,10 @@ const Login = () => {
                         <div className="space-y-6">
                             {/* Welcome Text */}
                             <div className="space-y-1">
-                                <h1 className="text-4xl font-extrabold text-secondary leading-tight">
+                                <h1 className="text-2xl font-extrabold text-secondary leading-tight">
                                     おかえりなさい
                                 </h1>
-                                <p className="text-xl text-secondary leading-relaxed">
+                                <p className="text-base text-secondary leading-relaxed">
                                     ログイン情報を入力してください
                                 </p>
                             </div>
@@ -70,7 +70,7 @@ const Login = () => {
                                 ログイン
                             </Button>
 
-                            <p className="text-base text-neutral-500 cursor-pointer hover:text-accent transition-colors underline underline-offset-2">
+                            <p className="text-sm text-neutral-500 cursor-pointer hover:text-accent transition-colors underline underline-offset-2">
                                 パスワードを忘れた方はこちら
                             </p>
                         </div>

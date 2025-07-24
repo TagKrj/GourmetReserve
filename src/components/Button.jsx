@@ -20,7 +20,7 @@ const Button = ({
             onClick={onClick}
             disabled={disabled}
             className={`
-                w-full font-medium rounded-md py-5 px-9 text-lg
+                w-full font-medium rounded-md py-5 px-9 text-base
                 ${getButtonStyles()}
                 hover:shadow-md transition-all duration-200
                 ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}
