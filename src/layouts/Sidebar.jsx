@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { menuItems, bottomMenuItems } from '../constants/menuItems.jsx';
-import logoText from '../assets/icon/logo_text.png';
+import logoText from '../assets/logo/logo_text2.png';
 
 const Sidebar = () => {
     const [activeItem, setActiveItem] = useState('home');
