@@ -18,24 +18,35 @@ const TabButton = ({
 
     return (
         <div
-            className={`inline-flex p-[1px] bg-neutral-300 rounded-[20px] ${className}`}
+            className={`relative inline-flex p-[1px] bg-neutral-300 rounded-[20px] ${className}`}
             {...props}
         >
+            {/* Animated background slider */}
+            <div
+                className="absolute top-[1px] left-[1px] bg-white rounded-[20px] shadow-sm transition-all duration-300 ease-in-out"
+                style={{
+                    width: `calc(${100 / options.length}% - 1px)`,
+                    height: 'calc(100% - 2px)',
+                    transform: `translateX(${activeIndex * 100}%)`
+                }}
+            />
+
             {options.map((option, index) => (
                 <button
                     key={index}
                     onClick={() => handleTabClick(index)}
                     className={`
-                        px-7 py-2 text-[18px] font-normal leading-[1.2] rounded-[20px] transition-all duration-200 cursor-pointer
+                        relative z-10 px-7 py-2 text-[18px] font-normal leading-[1.2] rounded-[20px] transition-all duration-200 cursor-pointer
                         ${activeIndex === index
-                            ? 'bg-white text-secondary shadow-sm'
-                            : 'bg-transparent text-neutral-500 hover:text-neutral-600'
+                            ? 'text-secondary'
+                            : 'text-neutral-500 hover:text-neutral-600'
                         }
                     `}
                     style={{
                         fontFamily: 'Noto Sans JP, sans-serif',
                         height: '42px',
-                        minWidth: 'auto'
+                        minWidth: 'auto',
+                        flex: 1
                     }}
                 >
                     {typeof option === 'string' ? option : option.label}
