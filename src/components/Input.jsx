@@ -50,7 +50,7 @@ const Input = ({
     );
 
     return (
-        <div className="relative h-12">
+        <div className="relative h-10">
             <input
                 type={inputType}
                 value={value}
@@ -58,7 +58,7 @@ const Input = ({
                 onFocus={() => setIsFocused(true)}
                 onBlur={() => setIsFocused(false)}
                 className={`
-                    w-full h-12 border rounded px-5 text-base text-secondary placeholder-neutral-500 
+                    w-full h-10 border rounded px-5 text-base text-secondary placeholder-neutral-500 
                     transition-all duration-200
                     ${getInputStyling()}
                     focus:outline-none
