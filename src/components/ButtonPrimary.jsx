@@ -16,7 +16,7 @@ const Button = ({
             return 'bg-accent hover:bg-[rgb(227,90,10,0.8)] text-white';
         }
         if (variant === 'outline') {
-            return 'bg-transparent border-2 border-accent text-accent hover:bg-accent-hover-light hover:text-accent';
+            return 'bg-white border-2 border-accent text-accent hover:bg-accent-hover-light hover:text-accent';
         }
         return 'bg-neutral-300 hover:bg-neutral-400 text-neutral-500 hover:text-neutral-600';
     };
