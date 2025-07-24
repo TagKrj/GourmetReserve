@@ -26,7 +26,7 @@ const Login = () => {
                         <div className="space-y-6">
                             {/* Welcome Text */}
                             <div className="space-y-1">
-                                <h1 className="text-2xl font-extrabold text-secondary leading-tight">
+                                <h1 className="text-4xl font-extrabold text-secondary leading-tight">
                                     おかえりなさい
                                 </h1>
                                 <p className="text-base text-secondary leading-relaxed">
