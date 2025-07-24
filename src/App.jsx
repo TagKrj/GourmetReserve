@@ -140,43 +140,56 @@ function App() {
               {/* Case 6: Tab Button */}
               <div>
                 <h3 className="text-lg font-semibold mb-3">Case 6: Tab Button (Toggle)</h3>
-                <div className="space-y-4">
-                  <TabButton
-                    options={[
-                      { label: '日別', value: 'daily' },
-                      { label: '月別', value: 'monthly' }
-                    ]}
-                    defaultActive={0}
-                    onChange={(index, option) => console.log('Selected:', index, option)}
-                  />
-                  <TabButton
-                    options={[
-                      { label: '週間', value: 'weekly' },
-                      { label: '月間', value: 'monthly' },
-                      { label: '年間', value: 'yearly' }
-                    ]}
-                    defaultActive={1}
-                    onChange={(index, option) => console.log('Period selected:', index, option)}
-                  />
-                  <TabButton
-                    options={[
-                      { label: '予約', value: 'reservation' },
-                      { label: 'キャンセル', value: 'cancellation' }
-                    ]}
-                    defaultActive={0}
-                    onChange={(index, option) => console.log('Status selected:', index, option)}
-                  />
+                <div className="space-y-6">
 
-                  {/* Ví dụ sử dụng với string đơn giản */}
-                  <TabButton
-                    options={['オプション1', 'オプション2', 'オプション3']}
-                    defaultActive={0}
-                    onChange={(index, option) => console.log('Simple selected:', index, option)}
-                  />
+                  <div>
+                    <h4 className="text-md font-medium mb-2">Variant Default (Xám):</h4>
+                    <div className="space-y-3">
+                      <TabButton
+                        variant="default"
+                        options={[
+                          { label: '日別', value: 'daily' },
+                          { label: '月別', value: 'monthly' }
+                        ]}
+                        defaultActive={0}
+                        onChange={(index, option) => console.log('Default selected:', index, option)}
+                      />
+                      <TabButton
+                        variant="default"
+                        options={[
+                          { label: '週間', value: 'weekly' },
+                          { label: '月間', value: 'monthly' },
+                          { label: '年間', value: 'yearly' }
+                        ]}
+                        defaultActive={1}
+                        onChange={(index, option) => console.log('Period selected:', index, option)}
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="text-md font-medium mb-2">Variant Inverse (Cam):</h4>
+                    <div className="space-y-3">
+                      <TabButton
+                        variant="inverse"
+                        options={[
+                          { label: '予約', value: 'reservation' },
+                          { label: 'キャンセル', value: 'cancellation' }
+                        ]}
+                        defaultActive={0}
+                        onChange={(index, option) => console.log('Inverse selected:', index, option)}
+                      />
+                      <TabButton
+                        variant="inverse"
+                        options={['設定', '詳細', 'ヘルプ']}
+                        defaultActive={0}
+                        onChange={(index, option) => console.log('Menu selected:', index, option)}
+                      />
+                    </div>
+                  </div>
+
                 </div>
-              </div>
-
-            </div>
+              </div>            </div>
           </div>
         </div>
       </div>
