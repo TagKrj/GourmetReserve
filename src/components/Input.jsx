@@ -23,12 +23,12 @@ const Input = ({
     // Get the border and background styling based on state
     const getInputStyling = () => {
         if (isFocused) {
-            return 'border-accent bg-accent-hover shadow-[0px_0px_0px_2px_rgba(227,90,10,0.25)]';
+            return 'border-accent bg-accent-hover-light shadow-[0px_0px_0px_2px_rgba(227,90,10,0.25)]';
         } else if (hasValue) {
             // Filled state - black border and light background like in Figma
             return 'border-secondary bg-primary';
         } else {
-            return 'border-neutral-400 bg-white focus:border-accent focus:bg-accent-hover';
+            return 'border-neutral-400 bg-white focus:border-accent focus:bg-accent-hover-light';
         }
     };
 
