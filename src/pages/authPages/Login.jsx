@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import AuthLayout from '../layouts/AuthLayout';
-import Input from '../components/Input';
-import Checkbox from '../components/Checkbox';
-import Button from '../components/Button';
+import AuthLayout from '../../layouts/AuthLayout';
+import Input from '../../components/Input';
+import Checkbox from '../../components/Checkbox';
+import Button from '../../components/Button';
 
 const Login = () => {
     const navigate = useNavigate();

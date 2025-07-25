@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import AuthLayout from '../layouts/AuthLayout';
-import Input from '../components/Input';
-import Button from '../components/Button';
+import AuthLayout from '../../layouts/AuthLayout';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
 
 const ResetPassword = () => {
     const navigate = useNavigate();
