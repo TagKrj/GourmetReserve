@@ -1,16 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Login from '../pages/authPages/Login';
-import ForgotPassword from '../pages/authPages/ForgotPassword';
-import ResetPassword from '../pages/authPages/ResetPassword';
+import AuthRouter from './AuthRouter';
+import ScreenRouter from './ScreenRouter';
 
 const AppRouter = () => {
     return (
         <Router>
             <Routes>
-                <Route path="/login" element={<Login />} />
-                <Route path="/forgot-password" element={<ForgotPassword />} />
-                <Route path="/reset-password" element={<ResetPassword />} />
+                {AuthRouter()}
+                <Route path="/*" element={<ScreenRouter />} />
                 <Route path="/" element={<Navigate to="/login" replace />} />
             </Routes>
         </Router>

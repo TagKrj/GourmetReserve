@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { menuItems, bottomMenuItems } from '../constants/menuItems.jsx';
 import logoText from '../assets/logo/logo_text2.png';
 
 const Sidebar = () => {
     const [activeItem, setActiveItem] = useState('home');
     const [expandedMenus, setExpandedMenus] = useState([]);
+    const navigate = useNavigate();
 
     const toggleSubmenu = (menuId) => {
         setExpandedMenus(prev =>
@@ -79,9 +81,13 @@ const Sidebar = () => {
                                 {item.submenu.map((subItem) => (
                                     <div
                                         key={subItem.id}
-                                        className={`nav-item cursor-pointer ${activeItem === subItem.id ? 'nav-item-active' : ''
-                                            }`}
-                                        onClick={() => setActiveItem(subItem.id)}
+                                        className={`nav-item cursor-pointer ${activeItem === subItem.id ? 'nav-item-active' : ''}`}
+                                        onClick={() => {
+                                            setActiveItem(subItem.id);
+                                            if (subItem.linkRouter) {
+                                                navigate(subItem.linkRouter);
+                                            }
+                                        }}
                                     >
                                         {subItem.icon && (
                                             <div className="w-5 h-5 text-current">

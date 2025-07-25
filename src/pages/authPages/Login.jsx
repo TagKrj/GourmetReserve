@@ -4,6 +4,7 @@ import AuthLayout from '../../layouts/AuthLayout';
 import Input from '../../components/Input';
 import Checkbox from '../../components/Checkbox';
 import Button from '../../components/Button';
+import { goToForgotPassword } from '../../utils/navigateHelpers';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -15,9 +16,8 @@ const Login = () => {
     const isFormValid = email.trim() !== '' && password.trim() !== '';
 
     const handleForgotPassword = () => {
-        navigate('/forgot-password');
+        goToForgotPassword(navigate);
     };
-
     const handleLogin = () => {
         console.log('Login clicked');
         // Add your login logic here

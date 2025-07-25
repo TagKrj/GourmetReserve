@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
-import MainLayout from '../layouts/MainLayout';
-import StepHeader from '../components/StepHeader';
-import ButtonPrimary from '../components/ButtonPrimary';
-import Input from '../components/Input';
+import MainLayout from '../../layouts/MainLayout';
+import StepHeader from '../../components/StepHeader';
+import ButtonPrimary from '../../components/ButtonPrimary';
+import Input from '../../components/Input';
 
 const CustomerRegistrationPage = () => {
     const fileInputRef = useRef(null);

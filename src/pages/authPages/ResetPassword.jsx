@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import AuthLayout from '../../layouts/AuthLayout';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
+import { goToLogin } from '../../utils/navigateHelpers';
 
 const ResetPassword = () => {
     const navigate = useNavigate();
@@ -23,8 +24,9 @@ const ResetPassword = () => {
     };
 
     const handleBackToLogin = () => {
-        navigate('/login');
+        goToLogin(navigate);
     };
+
 
     return (
         <AuthLayout>
