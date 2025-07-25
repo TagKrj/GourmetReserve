@@ -3,6 +3,7 @@ import Sidebar from "./layouts/Sidebar";
 import Header from "./layouts/Header";
 import AppRouter from "./routes/AppRouter";
 import Scr503 from "./pages/screens/Scr503";
+import PaginationDemo from "./pages/PaginationDemo";
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
 
     //     {/* Content with padding-top to account for fixed header */}
     //     <div className="pt-[70px]">
-    //       < Scr503 />
+    //       <PaginationDemo />
     //     </div>
     //   </div>
 
@@ -25,6 +26,8 @@ function App() {
     <div>
       <AppRouter />
     </div>
+
+    // < PaginationDemo />
   );
 }
 export default App;
