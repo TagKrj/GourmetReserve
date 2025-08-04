@@ -82,7 +82,7 @@ const CustomerRegistrationPage = () => {
                                                     <div className="relative">
                                                         <input
                                                             type="text"
-                                                            className="w-full h-10 px-5 border-2 bg-[#CA3D27]/10 border-[#D32F2F] rounded-md focus:outline-none focus:border-[#E35A0A] text-gray-700"
+                                                            className={`w-full h-10 px-5 border-2 ${customerData.lastName.trim() === '' ? 'bg-[#CA3D27]/10 border-[#D32F2F]' : 'bg-white border-gray-200'} rounded-md focus:bg-white focus:outline-none focus:border-gray-200 text-gray-700`}
                                                             placeholder="青空"
                                                             value={customerData.lastName}
                                                             onChange={(e) => setCustomerData({ ...customerData, lastName: e.target.value })}
@@ -92,7 +92,7 @@ const CustomerRegistrationPage = () => {
                                                     <div className="relative">
                                                         <input
                                                             type="text"
-                                                            className="w-full h-10 px-5 border-2 bg-[#CA3D27]/10 border-[#D32F2F] rounded-md focus:outline-none focus:border-[#E35A0A] text-gray-700"
+                                                            className={`w-full h-10 px-5 border-2 ${customerData.firstName.trim() === '' ? 'bg-[#CA3D27]/10 border-[#D32F2F]' : 'bg-white border-gray-200'} rounded-md focus:outline-none focus:bg-white focus:border-gray-200 text-gray-700`}
                                                             placeholder="太陽"
                                                             value={customerData.firstName}
                                                             onChange={(e) => setCustomerData({ ...customerData, firstName: e.target.value })}
@@ -106,7 +106,7 @@ const CustomerRegistrationPage = () => {
                                                     <div className="relative">
                                                         <input
                                                             type="text"
-                                                            className="w-full h-10 px-5 border-2 bg-[#CA3D27]/10 border-[#D32F2F] rounded-md focus:outline-none focus:border-[#E35A0A] text-gray-700"
+                                                            className={`w-full h-10 px-5 border-2 ${customerData.lastNameKana.trim() === '' ? 'bg-[#CA3D27]/10 border-[#D32F2F]' : 'bg-white border-gray-200'} rounded-md focus:outline-none focus:bg-white focus:border-gray-200 text-gray-700`}
                                                             placeholder="アオゾラ"
                                                             value={customerData.lastNameKana}
                                                             onChange={(e) => setCustomerData({ ...customerData, lastNameKana: e.target.value })}
@@ -116,7 +116,7 @@ const CustomerRegistrationPage = () => {
                                                     <div className="relative">
                                                         <input
                                                             type="text"
-                                                            className="w-full h-10 px-5 border-2 bg-[#CA3D27]/10 border-[#D32F2F] rounded-md focus:outline-none focus:border-[#E35A0A] text-gray-700"
+                                                            className={`w-full h-10 px-5 border-2 ${customerData.firstNameKana.trim() === '' ? 'bg-[#CA3D27]/10 border-[#D32F2F]' : 'bg-white border-gray-200'} rounded-md focus:outline-none focus:bg-white focus:border-gray-200 text-gray-700`}
                                                             placeholder="タロウ"
                                                             value={customerData.firstNameKana}
                                                             onChange={(e) => setCustomerData({ ...customerData, firstNameKana: e.target.value })}
@@ -129,51 +129,59 @@ const CustomerRegistrationPage = () => {
 
                                     {/* Birthday fields */}
                                     <div className="space-y-2">
-                                        <label className="block text-neutral-800 text-[15px] font-medium">生年月日</label>
-                                        <div className="flex gap-4">
-                                            <div className="relative w-32">
-                                                <select
-                                                    className="appearance-none border border-gray-200 rounded-md w-full h-10 px-4 text-gray-500 leading-tight focus:outline-none focus:border-blue-500"
-                                                    value={customerData.birthYear}
-                                                    onChange={(e) => setCustomerData({ ...customerData, birthYear: e.target.value })}
-                                                >
-                                                    <option value="">年</option>
-                                                    {dateOptions.year.map(year => (
-                                                        <option key={year} value={year}>{year}</option>
-                                                    ))}
-                                                </select>
-                                                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                                                    <img src={iconDown} alt="down" className="h-4 w-4" />
+                                        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+                                            <div className="md:col-span-1">
+                                                <div className="flex flex-col h-full justify-center">
+                                                    <label className="block text-neutral-800 text-[15px] font-medium">生年月日</label>
                                                 </div>
                                             </div>
-                                            <div className="relative w-32">
-                                                <select
-                                                    className="appearance-none border border-gray-200 rounded-md w-full h-10 px-4 text-gray-500 leading-tight focus:outline-none focus:border-blue-500"
-                                                    value={customerData.birthMonth}
-                                                    onChange={(e) => setCustomerData({ ...customerData, birthMonth: e.target.value })}
-                                                >
-                                                    <option value="">月</option>
-                                                    {dateOptions.month.map(month => (
-                                                        <option key={month} value={month}>{month}</option>
-                                                    ))}
-                                                </select>
-                                                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                                                    <img src={iconDown} alt="down" className="h-4 w-4" />
-                                                </div>
-                                            </div>
-                                            <div className="relative w-32">
-                                                <select
-                                                    className="appearance-none border border-gray-200 rounded-md w-full h-10 px-4 text-gray-500 leading-tight focus:outline-none focus:border-blue-500"
-                                                    value={customerData.birthDay}
-                                                    onChange={(e) => setCustomerData({ ...customerData, birthDay: e.target.value })}
-                                                >
-                                                    <option value="">日</option>
-                                                    {dateOptions.day.map(day => (
-                                                        <option key={day} value={day}>{day}</option>
-                                                    ))}
-                                                </select>
-                                                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                                                    <img src={iconDown} alt="down" className="h-4 w-4" />
+                                            <div className="md:col-span-4">
+                                                <div className="flex gap-4">
+                                                    <div className="relative w-32">
+                                                        <select
+                                                            className="appearance-none border border-gray-200 rounded-md w-full h-10 px-4 text-gray-500 leading-tight focus:outline-none focus:border-[#E35A0A]"
+                                                            value={customerData.birthYear}
+                                                            onChange={(e) => setCustomerData({ ...customerData, birthYear: e.target.value })}
+                                                        >
+                                                            <option value="">年</option>
+                                                            {dateOptions.year.map(year => (
+                                                                <option key={year} value={year}>{year}</option>
+                                                            ))}
+                                                        </select>
+                                                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                                            <img src={iconDown} alt="down" className="h-4 w-4" />
+                                                        </div>
+                                                    </div>
+                                                    <div className="relative w-32">
+                                                        <select
+                                                            className="appearance-none border border-gray-200 rounded-md w-full h-10 px-4 text-gray-500 leading-tight focus:outline-none focus:border-[#E35A0A]"
+                                                            value={customerData.birthMonth}
+                                                            onChange={(e) => setCustomerData({ ...customerData, birthMonth: e.target.value })}
+                                                        >
+                                                            <option value="">月</option>
+                                                            {dateOptions.month.map(month => (
+                                                                <option key={month} value={month}>{month}</option>
+                                                            ))}
+                                                        </select>
+                                                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                                            <img src={iconDown} alt="down" className="h-4 w-4" />
+                                                        </div>
+                                                    </div>
+                                                    <div className="relative w-32">
+                                                        <select
+                                                            className="appearance-none border border-gray-200 rounded-md w-full h-10 px-4 text-gray-500 leading-tight focus:outline-none focus:border-[#E35A0A]"
+                                                            value={customerData.birthDay}
+                                                            onChange={(e) => setCustomerData({ ...customerData, birthDay: e.target.value })}
+                                                        >
+                                                            <option value="">日</option>
+                                                            {dateOptions.day.map(day => (
+                                                                <option key={day} value={day}>{day}</option>
+                                                            ))}
+                                                        </select>
+                                                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                                            <img src={iconDown} alt="down" className="h-4 w-4" />
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -184,7 +192,7 @@ const CustomerRegistrationPage = () => {
                                         <label className="block text-neutral-800 text-[15px] font-medium">性別</label>
                                         <div className="relative w-[230px]">
                                             <select
-                                                className="appearance-none border border-gray-200 rounded-md w-full h-10 px-5 text-gray-500 leading-tight focus:outline-none focus:border-blue-500"
+                                                className="appearance-none border border-gray-200 rounded-md w-full h-10 px-5 text-gray-500 leading-tight focus:outline-none focus:border-[#E35A0A]"
                                                 value={customerData.gender}
                                                 onChange={(e) => setCustomerData({ ...customerData, gender: e.target.value })}
                                             >
@@ -205,7 +213,7 @@ const CustomerRegistrationPage = () => {
                                         <div className="relative">
                                             <input
                                                 type="tel"
-                                                className="w-full max-w-[300px] h-10 px-5 border border-gray-200 rounded-md focus:outline-none focus:border-blue-500 text-gray-700"
+                                                className="w-full max-w-[300px] h-10 px-5 border border-gray-200 rounded-md focus:outline-none focus:border-[#E35A0A] text-gray-700"
                                                 placeholder="031234XXXX"
                                                 value={customerData.phone}
                                                 onChange={(e) => setCustomerData({ ...customerData, phone: e.target.value })}
@@ -220,7 +228,7 @@ const CustomerRegistrationPage = () => {
                                             <div className="relative">
                                                 <input
                                                     type="email"
-                                                    className="w-full max-w-[300px] h-10 px-5 border border-gray-200 rounded-md focus:outline-none focus:border-blue-500 text-gray-700"
+                                                    className="w-full max-w-[300px] h-10 px-5 border border-gray-200 rounded-md focus:outline-none focus:border-[#E35A0A] text-gray-700"
                                                     placeholder="taro1@restaurant-board.com"
                                                     value={customerData.email}
                                                     onChange={(e) => setCustomerData({ ...customerData, email: e.target.value })}
@@ -228,7 +236,7 @@ const CustomerRegistrationPage = () => {
                                             </div>
                                             <div className="relative w-[240px]">
                                                 <select
-                                                    className="appearance-none border border-gray-200 rounded-md w-full h-10 px-5 text-gray-500 leading-tight focus:outline-none focus:border-blue-500"
+                                                    className="appearance-none border border-gray-200 rounded-md w-full h-10 px-5 text-gray-500 leading-tight focus:outline-none focus:border-[#E35A0A]"
                                                     value={customerData.emailConsent}
                                                     onChange={(e) => setCustomerData({ ...customerData, emailConsent: e.target.value })}
                                                 >
@@ -250,7 +258,7 @@ const CustomerRegistrationPage = () => {
                                             <div className="relative">
                                                 <input
                                                     type="text"
-                                                    className="w-full md:w-[260px] h-10 px-5 border border-gray-200 rounded-md focus:outline-none focus:border-blue-500 text-gray-700"
+                                                    className="w-full md:w-[260px] h-10 px-5 border border-gray-200 rounded-md focus:outline-none focus:border-[#E35A0A] text-gray-700"
                                                     placeholder="1006640"
                                                     value={customerData.zipCode}
                                                     onChange={(e) => setCustomerData({ ...customerData, zipCode: e.target.value })}
@@ -258,7 +266,7 @@ const CustomerRegistrationPage = () => {
                                             </div>
                                             <div className="relative w-full md:w-[180px]">
                                                 <select
-                                                    className="appearance-none border border-gray-200 rounded-md w-full h-10 px-5 text-gray-500 leading-tight focus:outline-none focus:border-blue-500"
+                                                    className="appearance-none border border-gray-200 rounded-md w-full h-10 px-5 text-gray-500 leading-tight focus:outline-none focus:border-[#E35A0A]"
                                                     value={customerData.prefecture}
                                                     onChange={(e) => setCustomerData({ ...customerData, prefecture: e.target.value })}
                                                 >
@@ -275,7 +283,7 @@ const CustomerRegistrationPage = () => {
                                         <div className="relative">
                                             <input
                                                 type="text"
-                                                className="w-full h-10 px-5 border border-gray-200 rounded-md focus:outline-none focus:border-blue-500 text-gray-700"
+                                                className="w-full h-10 px-5 border border-gray-200 rounded-md focus:outline-none focus:border-[#E35A0A] text-gray-700"
                                                 placeholder="千代田区丸の内1-9-2 グラントウキョウサウスタワー"
                                                 value={customerData.address}
                                                 onChange={(e) => setCustomerData({ ...customerData, address: e.target.value })}
@@ -288,7 +296,7 @@ const CustomerRegistrationPage = () => {
                                 <div className="bg-[#FBD0B2]/50 p-4 rounded-lg">
                                     <h3 className="text-lg font-light text-neutral-800 mb-3">お客様メモ</h3>
                                     <textarea
-                                        className="w-full h-[250px] p-4 border border-gray-200 rounded-lg bg-gray-50 resize-none focus:outline-none focus:border-blue-500"
+                                        className="w-full h-[250px] p-4 border border-gray-200 rounded-lg bg-gray-50 resize-none focus:outline-none focus:border-[#E35A0A]"
                                         value={customerData.customerMemo}
                                         onChange={(e) => setCustomerData({ ...customerData, customerMemo: e.target.value })}
                                         maxLength={1000}
