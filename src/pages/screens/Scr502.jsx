@@ -139,7 +139,7 @@ const CustomerRegistrationPage = () => {
                                                 <div className="flex gap-4">
                                                     <div className="relative w-32">
                                                         <select
-                                                            className="appearance-none border border-gray-200 rounded-md w-full h-10 px-4 text-gray-500 leading-tight focus:outline-none focus:border-[#E35A0A]"
+                                                            className="appearance-none border border-gray-200 rounded-md w-full h-10 px-4 text-gray-400 leading-tight focus:outline-none focus:border-[#E35A0A]"
                                                             value={customerData.birthYear}
                                                             onChange={(e) => setCustomerData({ ...customerData, birthYear: e.target.value })}
                                                         >
@@ -154,7 +154,7 @@ const CustomerRegistrationPage = () => {
                                                     </div>
                                                     <div className="relative w-32">
                                                         <select
-                                                            className="appearance-none border border-gray-200 rounded-md w-full h-10 px-4 text-gray-500 leading-tight focus:outline-none focus:border-[#E35A0A]"
+                                                            className="appearance-none border border-gray-200 rounded-md w-full h-10 px-4 text-gray-400 leading-tight focus:outline-none focus:border-[#E35A0A]"
                                                             value={customerData.birthMonth}
                                                             onChange={(e) => setCustomerData({ ...customerData, birthMonth: e.target.value })}
                                                         >
@@ -169,7 +169,7 @@ const CustomerRegistrationPage = () => {
                                                     </div>
                                                     <div className="relative w-32">
                                                         <select
-                                                            className="appearance-none border border-gray-200 rounded-md w-full h-10 px-4 text-gray-500 leading-tight focus:outline-none focus:border-[#E35A0A]"
+                                                            className="appearance-none border border-gray-200 rounded-md w-full h-10 px-4 text-gray-400 leading-tight focus:outline-none focus:border-[#E35A0A]"
                                                             value={customerData.birthDay}
                                                             onChange={(e) => setCustomerData({ ...customerData, birthDay: e.target.value })}
                                                         >
@@ -189,63 +189,87 @@ const CustomerRegistrationPage = () => {
 
                                     {/* Gender field */}
                                     <div className="space-y-2">
-                                        <label className="block text-neutral-800 text-[15px] font-medium">性別</label>
-                                        <div className="relative w-[230px]">
-                                            <select
-                                                className="appearance-none border border-gray-200 rounded-md w-full h-10 px-5 text-gray-500 leading-tight focus:outline-none focus:border-[#E35A0A]"
-                                                value={customerData.gender}
-                                                onChange={(e) => setCustomerData({ ...customerData, gender: e.target.value })}
-                                            >
-                                                <option>選択してください</option>
-                                                <option>男性</option>
-                                                <option>女性</option>
-                                                <option>その他</option>
-                                            </select>
-                                            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
-                                                <img src={iconDown} alt="down" className="h-4 w-4" />
+                                        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+                                            <div className="md:col-span-1">
+                                                <div className="flex flex-col h-full justify-center">
+                                                    <label className="block text-neutral-800 text-[15px] font-medium">性別</label>
+                                                </div>
+                                            </div>
+                                            <div className="md:col-span-4">
+                                                <div className="relative w-[230px]">
+                                                    <select
+                                                        className="appearance-none border border-gray-200 rounded-md w-full h-10 px-5 text-gray-500 leading-tight focus:outline-none focus:border-[#E35A0A]"
+                                                        value={customerData.gender}
+                                                        onChange={(e) => setCustomerData({ ...customerData, gender: e.target.value })}
+                                                    >
+                                                        <option>選択してください</option>
+                                                        <option>男性</option>
+                                                        <option>女性</option>
+                                                        <option>その他</option>
+                                                    </select>
+                                                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
+                                                        <img src={iconDown} alt="down" className="h-4 w-4" />
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
                                     {/* Phone field */}
                                     <div className="space-y-2">
-                                        <label className="block text-neutral-800 text-[15px] font-medium">電話番号</label>
-                                        <div className="relative">
-                                            <input
-                                                type="tel"
-                                                className="w-full max-w-[300px] h-10 px-5 border border-gray-200 rounded-md focus:outline-none focus:border-[#E35A0A] text-gray-700"
-                                                placeholder="031234XXXX"
-                                                value={customerData.phone}
-                                                onChange={(e) => setCustomerData({ ...customerData, phone: e.target.value })}
-                                            />
+                                        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+                                            <div className="md:col-span-1">
+                                                <div className="flex flex-col h-full justify-center">
+                                                    <label className="block text-neutral-800 text-[15px] font-medium">電話番号</label>
+                                                </div>
+                                            </div>
+                                            <div className="md:col-span-4">
+                                                <div className="relative">
+                                                    <input
+                                                        type="tel"
+                                                        className="w-full max-w-[300px] h-10 px-5 border border-gray-200 rounded-md focus:outline-none focus:border-[#E35A0A] text-gray-700"
+                                                        placeholder="031234XXXX"
+                                                        value={customerData.phone}
+                                                        onChange={(e) => setCustomerData({ ...customerData, phone: e.target.value })}
+                                                    />
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
                                     {/* Email & consent field */}
                                     <div className="space-y-2">
-                                        <label className="block text-neutral-800 text-[15px] font-medium">メールアドレス</label>
-                                        <div className="flex gap-4 flex-col md:flex-row">
-                                            <div className="relative">
-                                                <input
-                                                    type="email"
-                                                    className="w-full max-w-[300px] h-10 px-5 border border-gray-200 rounded-md focus:outline-none focus:border-[#E35A0A] text-gray-700"
-                                                    placeholder="taro1@restaurant-board.com"
-                                                    value={customerData.email}
-                                                    onChange={(e) => setCustomerData({ ...customerData, email: e.target.value })}
-                                                />
+                                        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+                                            <div className="md:col-span-1">
+                                                <div className="flex flex-col h-full justify-center">
+                                                    <label className="block text-neutral-800 text-[15px] font-medium">メールアドレス</label>
+                                                </div>
                                             </div>
-                                            <div className="relative w-[240px]">
-                                                <select
-                                                    className="appearance-none border border-gray-200 rounded-md w-full h-10 px-5 text-gray-500 leading-tight focus:outline-none focus:border-[#E35A0A]"
-                                                    value={customerData.emailConsent}
-                                                    onChange={(e) => setCustomerData({ ...customerData, emailConsent: e.target.value })}
-                                                >
-                                                    <option>配信可否を選択</option>
-                                                    <option>配信可</option>
-                                                    <option>配信不可</option>
-                                                </select>
-                                                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
-                                                    <img src={iconDown} alt="down" className="h-4 w-4" />
+                                            <div className="md:col-span-4">
+                                                <div className="flex gap-4 flex-col md:flex-row">
+                                                    <div className="relative">
+                                                        <input
+                                                            type="email"
+                                                            className="w-full max-w-[300px] h-10 px-5 border border-gray-200 rounded-md focus:outline-none focus:border-[#E35A0A] text-gray-700"
+                                                            placeholder="taro1@restaurant-board.com"
+                                                            value={customerData.email}
+                                                            onChange={(e) => setCustomerData({ ...customerData, email: e.target.value })}
+                                                        />
+                                                    </div>
+                                                    <div className="relative w-[240px]">
+                                                        <select
+                                                            className="appearance-none border border-gray-200 rounded-md w-full h-10 px-5 text-gray-400 leading-tight focus:outline-none focus:border-[#E35A0A]"
+                                                            value={customerData.emailConsent}
+                                                            onChange={(e) => setCustomerData({ ...customerData, emailConsent: e.target.value })}
+                                                        >
+                                                            <option>配信可否を選択</option>
+                                                            <option>配信可</option>
+                                                            <option>配信不可</option>
+                                                        </select>
+                                                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
+                                                            <img src={iconDown} alt="down" className="h-4 w-4" />
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -253,41 +277,51 @@ const CustomerRegistrationPage = () => {
 
                                     {/* Address fields */}
                                     <div className="space-y-2">
-                                        <label className="block text-neutral-800 text-[15px] font-medium">住所</label>
-                                        <div className="flex gap-4 mb-2 flex-col md:flex-row">
-                                            <div className="relative">
-                                                <input
-                                                    type="text"
-                                                    className="w-full md:w-[260px] h-10 px-5 border border-gray-200 rounded-md focus:outline-none focus:border-[#E35A0A] text-gray-700"
-                                                    placeholder="1006640"
-                                                    value={customerData.zipCode}
-                                                    onChange={(e) => setCustomerData({ ...customerData, zipCode: e.target.value })}
-                                                />
-                                            </div>
-                                            <div className="relative w-full md:w-[180px]">
-                                                <select
-                                                    className="appearance-none border border-gray-200 rounded-md w-full h-10 px-5 text-gray-500 leading-tight focus:outline-none focus:border-[#E35A0A]"
-                                                    value={customerData.prefecture}
-                                                    onChange={(e) => setCustomerData({ ...customerData, prefecture: e.target.value })}
-                                                >
-                                                    <option value="sdssds">sdssds</option>
-                                                    <option value="東京都">東京都</option>
-                                                    <option value="大阪府">大阪府</option>
-                                                    <option value="神奈川県">神奈川県</option>
-                                                </select>
-                                                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
-                                                    <img src={iconDown} alt="down" className="h-4 w-4" />
+                                        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+                                            <div className="md:col-span-1">
+                                                <div className="flex flex-col h-full justify-center">
+                                                    <label className="block text-neutral-800 text-[15px] font-medium">住所</label>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="relative">
-                                            <input
-                                                type="text"
-                                                className="w-full h-10 px-5 border border-gray-200 rounded-md focus:outline-none focus:border-[#E35A0A] text-gray-700"
-                                                placeholder="千代田区丸の内1-9-2 グラントウキョウサウスタワー"
-                                                value={customerData.address}
-                                                onChange={(e) => setCustomerData({ ...customerData, address: e.target.value })}
-                                            />
+                                            <div className="md:col-span-4">
+                                                <div className="space-y-2">
+                                                    <div className="flex gap-4 mb-2 flex-col md:flex-row">
+                                                        <div className="relative">
+                                                            <input
+                                                                type="text"
+                                                                className="w-full md:w-[260px] h-10 px-5 border border-gray-200 rounded-md focus:outline-none focus:border-[#E35A0A] text-gray-400"
+                                                                placeholder="1006640"
+                                                                value={customerData.zipCode}
+                                                                onChange={(e) => setCustomerData({ ...customerData, zipCode: e.target.value })}
+                                                            />
+                                                        </div>
+                                                        <div className="relative w-full md:w-[180px]">
+                                                            <select
+                                                                className="appearance-none border border-gray-200 rounded-md w-full h-10 px-5 text-gray-400 leading-tight focus:outline-none focus:border-[#E35A0A]"
+                                                                value={customerData.prefecture}
+                                                                onChange={(e) => setCustomerData({ ...customerData, prefecture: e.target.value })}
+                                                            >
+                                                                <option value="sdssds">sdssds</option>
+                                                                <option value="東京都">東京都</option>
+                                                                <option value="大阪府">大阪府</option>
+                                                                <option value="神奈川県">神奈川県</option>
+                                                            </select>
+                                                            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
+                                                                <img src={iconDown} alt="down" className="h-4 w-4" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="relative">
+                                                        <input
+                                                            type="text"
+                                                            className="w-full h-10 px-5 border border-gray-200 rounded-md focus:outline-none focus:border-[#E35A0A] text-gray-700"
+                                                            placeholder="千代田区丸の内1-9-2 グラントウキョウサウスタワー"
+                                                            value={customerData.address}
+                                                            onChange={(e) => setCustomerData({ ...customerData, address: e.target.value })}
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
