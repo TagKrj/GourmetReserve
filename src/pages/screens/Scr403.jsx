@@ -115,30 +115,41 @@ const CourseAvailabilityPage = () => {
                         </div>
 
                         {/* Course Availability Table */}
-                        <div className="flex items-center justify-end space-x-4 mb-5 ">
+                        {/* leftRight button */}
+                        <div className="relative w-[calc(100%-270px)] h-0 ml-70 ">
                             <div
-                                className='w-8 h-8 flex items-center justify-center rounded-full cursor-pointer border-2 border-gray-200 bg-white hover:bg-gray-100'
-                                onClick={() => {
-                                    if (courseTableScrollRef.current) {
-                                        courseTableScrollRef.current.scrollBy({ left: -200, behavior: 'smooth' });
-                                    }
-                                }}
+                                className="absolute left-0 top-0 z-20"
+                                style={{ transform: 'translateY(25px)' }}
                             >
-                                <img src={arrowRight} alt="" style={{
-                                    width: '10px', height: '10px', transform: 'rotate(180deg)'
-                                }} />
+                                <div
+                                    className='w-8 h-8 flex items-center justify-center rounded-full cursor-pointer border-2 border-gray-200 bg-white hover:bg-gray-100 shadow'
+                                    onClick={() => {
+                                        if (courseTableScrollRef.current) {
+                                            courseTableScrollRef.current.scrollBy({ left: -200, behavior: 'smooth' });
+                                        }
+                                    }}
+                                >
+                                    <img src={arrowRight} alt="" style={{
+                                        width: '10px', height: '10px', transform: 'rotate(180deg)'
+                                    }} />
+                                </div>
                             </div>
                             <div
-                                className='w-8 h-8 flex items-center justify-center rounded-full cursor-pointer border-2 border-gray-200 bg-white hover:bg-gray-100'
-                                onClick={() => {
-                                    if (courseTableScrollRef.current) {
-                                        courseTableScrollRef.current.scrollBy({ left: 200, behavior: 'smooth' });
-                                    }
-                                }}
+                                className="absolute right-0 top-0 z-20"
+                                style={{ transform: 'translateY(25px)' }}
                             >
-                                <img src={arrowRight} alt="" style={{
-                                    width: '10px', height: '10px', color: '#1A1A1A'
-                                }} />
+                                <div
+                                    className='w-8 h-8 flex items-center justify-center rounded-full cursor-pointer border-2 border-gray-200 bg-white hover:bg-gray-100 shadow'
+                                    onClick={() => {
+                                        if (courseTableScrollRef.current) {
+                                            courseTableScrollRef.current.scrollBy({ left: 200, behavior: 'smooth' });
+                                        }
+                                    }}
+                                >
+                                    <img src={arrowRight} alt="" style={{
+                                        width: '10px', height: '10px', color: '#1A1A1A'
+                                    }} />
+                                </div>
                             </div>
                         </div>
 
@@ -148,11 +159,7 @@ const CourseAvailabilityPage = () => {
                                     <tr className="bg-[#F9F8F6]">
                                         <th className="p-4 border border-gray-200 text-center text-gray-400 font-medium w-24 h-20 text-xs">日付</th>
                                         <th className="p-4 border border-gray-200 text-center text-gray-400 font-medium w-40 text-xs">日付／コース名</th>
-                                        {/* {courseData.courses.map(course => (
-                                            <th key={course.id} className="p-4 border border-gray-200 text-center text-gray-400 font-medium w-32">
-                                                <div className="text-xs line-clamp-2">{course.name}</div>
-                                            </th>
-                                        ))} */}
+
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -172,22 +179,6 @@ const CourseAvailabilityPage = () => {
                                                     {day.date.toLocaleDateString('ja-JP', { month: '2-digit', day: '2-digit' }).replace('/', '/')}
                                                     <span className="ml-1">{['日', '月', '火', '水', '木', '金', '土'][dayOfWeek]}</span>
                                                 </td>
-
-                                                {/* {courseData.courses.map(course => (
-                                                    <td key={`${course.id}-${day.dateString}`} className="p-4 border border-gray-200 text-center">
-                                                        <label className="inline-flex items-center cursor-pointer">
-                                                            <input
-                                                                type="checkbox"
-                                                                className="w-5 h-5 text-[#E35A0A] bg-gray-100 border-gray-300 rounded focus:ring-[#E35A0A] cursor-pointer accent-[#E35A0A]"
-                                                                checked={isAvailable(course.id, day.dateString)}
-                                                                onChange={() => toggleAvailability(course.id, day.dateString)}
-                                                            />
-                                                            <span className={`ml-2 font-medium text-gray-400`}>
-                                                                {isAvailable(course.id, day.dateString) ? 'OK' : 'NG'}
-                                                            </span>
-                                                        </label>
-                                                    </td>
-                                                ))} */}
                                             </tr>
                                         );
                                     })}
