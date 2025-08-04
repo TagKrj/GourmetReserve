@@ -13,3 +13,7 @@ export const goToForgotPassword = (navigate) => {
 export const goToScr503 = (navigate) => {
     navigate('/Scr503');
 };
+
+export const goToScr502 = (navigate) => {
+    navigate('/Scr502');
+};

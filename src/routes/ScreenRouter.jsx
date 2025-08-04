@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Sidebar from '../layouts/Sidebar';
 import Header from '../layouts/Header';
 import Scr503 from '../pages/screens/Scr503';
+import Scr502 from '../pages/screens/Scr502';
 
 const ScreenRouter = () => (
     <div className="min-h-screen bg-primary flex">
@@ -12,6 +13,7 @@ const ScreenRouter = () => (
             <div className="pt-[70px]">
                 <Routes>
                     <Route path="/Scr503" element={<Scr503 />} />
+                    <Route path="/Scr502" element={<Scr502 />} />
                     {/* Thêm các màn hình khác nếu cần */}
                 </Routes>
             </div>
