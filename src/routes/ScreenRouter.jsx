@@ -4,6 +4,8 @@ import Sidebar from '../layouts/Sidebar';
 import Header from '../layouts/Header';
 import Scr503 from '../pages/screens/Scr503';
 import Scr502 from '../pages/screens/Scr502';
+import Scr403 from '../pages/screens/Scr403';
+
 
 const ScreenRouter = () => (
     <div className="min-h-screen bg-primary flex">
@@ -14,6 +16,8 @@ const ScreenRouter = () => (
                 <Routes>
                     <Route path="/Scr503" element={<Scr503 />} />
                     <Route path="/Scr502" element={<Scr502 />} />
+                    <Route path="/Scr403" element={<Scr403 />} />
+
                     {/* Thêm các màn hình khác nếu cần */}
                 </Routes>
             </div>

@@ -19,6 +19,7 @@ const MainLayout = ({
     mainContent,
     leftText,
     leftTextBottom,
+    leftTextBottom2,
     className = '',
 }) => {
     return (
@@ -45,11 +46,19 @@ const MainLayout = ({
             </div>
 
             {/* Left bottom text */}
-            {leftTextBottom && (
-                <div className="">
-                    <span className="text-neutral-500 text-base">{leftTextBottom}</span>
-                </div>
-            )}
+            <div className="space-y-0.5">
+                {leftTextBottom && (
+                    <div>
+                        <span className="text-neutral-500 text-base">{leftTextBottom}</span>
+                    </div>
+                )}
+                {/* Left bottom text 2 */}
+                {leftTextBottom2 && (
+                    <div>
+                        <span className="text-neutral-500 text-base">{leftTextBottom2}</span>
+                    </div>
+                )}
+            </div>
 
             {/* Main content area - aligned with left column */}
             <div

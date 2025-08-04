@@ -193,7 +193,8 @@ export const menuItems = [
                             </clipPath>
                         </defs>
                     </svg>
-                )
+                ),
+                linkRouter: '/Scr403'
             }
         ]
     },

@@ -17,3 +17,7 @@ export const goToScr503 = (navigate) => {
 export const goToScr502 = (navigate) => {
     navigate('/Scr502');
 };
+
+export const goToScr403 = (navigate) => {
+    navigate('/Scr403');
+};
